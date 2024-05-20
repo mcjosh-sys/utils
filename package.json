@@ -1,0 +1,19 @@
+{
+  "name": "@erosennin/utils",
+  "version": "1.0.0",
+  "description":"A set of utility functions",
+  "scripts": {
+    "build": "rm -rf dist/ && prettier --write src/ & npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/lib/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcjosh-sys/utils.git"
+  },
+  "author": "Joshua Olushola <olusholajoshua7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
